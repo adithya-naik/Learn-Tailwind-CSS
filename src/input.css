@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
+
+
+ /*  interpretation of @apply:- */
+ /* this is to keep/give name to a list of classes aplied */
+ /* should be written before @tailwind utilities as if we want to use tailwind css utility classes after that  */
+ /* Here the order of importing also places a key role */
+
+
+
+ /* need of @layer :-  */
+/* so to avoid this i.e order of importing we use @layer <layer name> here name can be base,components ,utilities,*/
+
+/* @layer components{
+  .my-btn{
+    @apply border  bg-black text-white  active:bg-slate-600 hover:font-semibold hover:bg-slate-950 px-2 rounded-2xl py-1 h-10 w-32;
+  }
+} */
+
+/* which means the classs inside that layer wil be added after importing all the availabe classes in that layer */
+/* major use : lets say we want  a seggt of styles in a class but it is nt available in tailwind css libraray then simply keep @layer utilities as layername  */
+
+
+
+
+/* but at the last using @layer and @Apply is not gonna help us so we will add our custom clases in the config file > themes{
+extend {
+//inside this
+}
+}*/
+
+
+/* npx tailwindcss init confgAdithya --full  */
+
+/* we wil use the above command to geta  default config file with all the availabe constanta and variables presernt in it,by using it as a reference  we can modify our main config file */
+
+.my-btn{
+  @apply border  bg-black text-white  active:bg-slate-600 hover:font-semibold hover:bg-slate-950 px-2 rounded-2xl py-1 h-10 w-32;
+}
+
 @tailwind utilities;
