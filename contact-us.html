@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body> 
+    <nav class="bg-black text-xl py-2   flex justify-between  text-white flex-col md:flex-row  text-center">
+      <span class="py-2 px-12  font-bold cursor-pointer">MOBMANIA</span>
+      <ul class="flex space-x-6  justify-center mx-6 py-2 px-2 ">
+        <a href="index.html"><li class=" hover:text-gray-300">Home</li></a>
+        <a href="about-us.html"><li class="cursor-pointer hover:text-gray-300">About</li></a>
+        <a href="my-store.html"><li class="cursor-pointer hover:text-gray-300">Store</li></a>
+        <!-- <li class="cursor-pointer hover:text-gray-300">Complaint</li> -->
+        <a href="contact-us.html"><li href class="cursor-pointer hover:text-gray-300">Contact</li></a>
+      </ul>
+    </nav>
+    <div class="isolate bg-white px-6 py-8 sm:py-8 lg:px-8">
+      <div
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        aria-hidden="true"
+      >
+      </div>
+      <div class="w-5/6 m-auto ">
+        <h2
+          class="mb-8 text-balance text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+        >
+          Contact Us
+        </h2>
+        <p class="  p-0 mt-8 text-pretty text-lg font-medium text-black-300 sm:text-xl/8">
+          We at MOBMANIA value your questions, feedback, and concerns, and we're here to assist you with any inquiries you may have about our products or services. Our commitment to 100% trust means that we are dedicated to providing you with exceptional customer support at every step of your journey with us. Whether you need help with your purchase, have questions about our quality assurance process, or simply want to learn more about our pre-owned mobiles, our friendly and knowledgeable team is here for you.
+        </p>
+      </div>
+      <form action="#" method="POST" class="mx-auto mt-16 max-w-2xl sm:mt-8">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <label
+              for="first-name"
+              class="block text-sm/6 font-semibold text-gray-900"
+              >Full name</label
+            >
+            <div class="mt-2">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autocomplete="given-name"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+              />
+            </div>
+          </div>
+          
+          
+          <div class="sm:col-span-2">
+            <label
+              for="email"
+              class="block text-sm/6 font-semibold text-gray-900"
+              >Email</label
+            >
+            <div class="mt-2">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="phone-number"
+              class="block text-sm/6 font-semibold text-gray-900"
+              >Phone number</label
+            >
+            <div class="relative mt-2">
+              <div class="absolute inset-y-0 left-0 flex items-center">
+                <label for="country" class="sr-only">Country</label>
+                <select
+                  id="country"
+                  name="country"
+                  class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                >
+                  <option>IND</option>
+                  <option>US</option>
+                  <option>EU</option>
+                </select>
+                
+              </div>
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                autocomplete="tel"
+                class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block text-sm/6 font-semibold text-gray-900"
+              >Message</label
+            >
+            <div class="mt-2">
+              <textarea
+                name="message"
+                id="message"
+                rows="3"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+              ></textarea>
+            </div>
+          </div>
+          <div class="flex gap-x-4 sm:col-span-2">
+            <div class="flex h-6 items-center">
+              <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+              <button
+                type="button"
+                class="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                role="switch"
+                aria-checked="false"
+                aria-labelledby="switch-1-label"
+              >
+                <span class="sr-only">Agree to policies</span>
+                <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+                <span
+                  aria-hidden="true"
+                  class="h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
+                ></span>
+              </button>
+            </div>
+            <label class="text-sm/6 text-gray-600" id="switch-1-label">
+              By selecting this, you agree to our
+              <a href="#" class="font-semibold text-indigo-600"
+                >privacy&nbsp;policy</a
+              >.
+            </label>
+          </div>
+        </div>
+        <div class="mt-10">
+          <button
+            type="submit"
+            class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Let's talk
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
